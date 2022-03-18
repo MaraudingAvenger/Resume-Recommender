@@ -97,8 +97,10 @@ def section(text: str) -> None:
 
 
 if __name__ == "__main__":
-    from pprint import pprint
     fname = sys.argv[1]
+    if not os.path.exists(fname):
+        print("file does not exist")
+        sys.exit(1)
 
     header("Resume Dataset Analysis")
 
