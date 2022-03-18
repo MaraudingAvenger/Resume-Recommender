@@ -33,7 +33,7 @@ class Graph():
         self.edges[from_node].append(to_node)
         self.weights[(from_node, to_node)] = weight
         
-    def dijkstra(self, initial, end):
+    def dijkstra(self, initial: Any, end: Any) -> Optional[list[Any]]:
         shortest_paths = {initial: (None, 0)}
         current_node = initial
         visited = set()
@@ -54,7 +54,7 @@ class Graph():
             next_destinations = {node: shortest_paths[node] for node in shortest_paths if node not in visited}
             
             if not next_destinations:
-                return False
+                return None
             
             # next node is the destination with the lowest weight
             current_node = min(next_destinations, key=lambda k: next_destinations[k][1])
@@ -123,7 +123,7 @@ class ATB():
                 if c in node.children and _delete(node.children[c], key, d+1):
                     del node.children[c]
 
-            return node.value is None and len(node.children == 0)
+            return node.value is None and len(node.children) == 0
 
         return _delete(self.root, key, 0)
 
