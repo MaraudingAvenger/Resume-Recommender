@@ -6,7 +6,7 @@ The main notebook is [`project.ipynb`](https://github.com/MaraudingAvenger/Resum
 
 ### Console usage
 
-There is a command-line version included in the [`/Console`](https://github.com/MaraudingAvenger/Resume-Recommender/tree/master/Console) folder, specifically [`document.py`](https://github.com/MaraudingAvenger/Resume-Recommender/blob/master/Console/document.py). For the console file to work correctly, it needs to be in the same directory as the extracted resume data set. 
+There is a command-line version included \([`document.py`](https://github.com/MaraudingAvenger/Resume-Recommender/blob/master/document.py)\). For the console file to work correctly, it needs to be in the same directory as the extracted resume data set. 
 
 ```python
 $> python document.py path/to/document.docx
