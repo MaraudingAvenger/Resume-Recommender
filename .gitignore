@@ -1,6 +1,10 @@
 \.ipynb_checkpoints
 __pycache__
 
+# personal data
+*resume*
+
+# uncompressed files
 *.csv
 *.docx
 *.doc
